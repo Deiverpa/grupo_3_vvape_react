@@ -13,17 +13,6 @@ let TotalProducts = {
     icon: 'fa-clipboard-list'
 }
 
-/* <!-- totalUsers --> */
-
-// let totalUsers = {
-//     title:' Total users', 
-//     color:'success', 
-//     cuantity: '79',
-//     icon:'fa-award'
-// }
-
-/* <!-- categories quantity --> */
-
 let categoriesQuantity = {
     title:'Categories Quantity' ,
     color:'primary',

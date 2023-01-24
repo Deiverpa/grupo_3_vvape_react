@@ -16,7 +16,7 @@ let totalUsers = {
     icon:'fa-award'
 }
 
-/* <!-- categories quantity --> */
+
 
 let cartProps = [totalUsers];
 
