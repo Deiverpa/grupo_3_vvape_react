@@ -9,7 +9,7 @@ import SmallCard from './SmallCard';
 let TotalProducts = {
     title: 'Total Products',
     color: 'primary', 
-    cuantity: 21,
+    cuantity: 0,
     icon: 'fa-clipboard-list'
 }
 
@@ -72,7 +72,7 @@ class ContentRowMovies extends Component {
             contenido = <p>{this.state.ContentRowMovies}</p>
         }
         return(
-            <div className="row">
+            <div className="row d-flex justify-content-center">
             
             {cartProps.map( (product, i) => {
 

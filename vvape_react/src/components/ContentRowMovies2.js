@@ -12,7 +12,7 @@ import SmallCard from './SmallCard';
 let totalUsers = {
     title:' Total users', 
     color:'primary', 
-    cuantity: '79',
+    cuantity: '0',
     icon:'fa-award'
 }
 
@@ -40,7 +40,7 @@ class ContentRowMovies2 extends Component {
         this.apiCall('http://localhost:3001/users/api/listUsers',this.UsersInfo)
     }
     UsersInfo = (data)=>{
-        console.log(data);
+        // console.log(data);
         totalUsers.cuantity= data.data.length;
 
         this.setState(
@@ -52,7 +52,7 @@ class ContentRowMovies2 extends Component {
     }
     componentDidUpdate(){
         // console.log('mecambié');
-        alert('Response from Data Base')
+        // alert('Response from Data Base')
     }
     render(){
         // console.log('esotyrenderizando');
@@ -63,7 +63,7 @@ class ContentRowMovies2 extends Component {
             contenido = <p>{this.state.ContentRowMovies2}</p>
         }
         return(
-            <div className="row">
+            <div className="row d-flex justify-content-center">
             
             {cartProps.map( (user, i) => {
 

@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 
 
 let LastProduct = {
-    name:'s', 
+    name:'', 
     description:'primary', 
-    price: '79',
+    price: '',
     img: ''
 }
 
@@ -24,12 +24,12 @@ class LastProductInDb extends Component {
     }
 
     componentDidMount(){
-        console.log('memonté');
+        // console.log('memonté');
         this.apiCall('http://localhost:3001/api/listProducts',this.ProductsInfo)
     }
     ProductsInfo = (data)=>{
         let LastProductCreated = data.data.slice(-1)
-        console.log(LastProductCreated);
+        // console.log(LastProductCreated);
         let lastName = LastProductCreated[0].name
         let lastDescription = LastProductCreated[0].description
         let lastPrice = LastProductCreated[0].price
@@ -77,60 +77,5 @@ class LastProductInDb extends Component {
     )
 }
 }
-// class ContentRowMovies2 extends Component {
-//     constructor(props){
-//         super(props);
-//         this.state = {
-//             ContentRowMovies2: ''
-//         }
-//     }
-
-//     apiCall(url,consec){
-//         fetch('http://localhost:3001/users/api/listUsers')
-//         .then(response => response.json())
-//         .then(data => consec(data))
-//         .catch(error => console.log(error))
-//     }
-
-//     componentDidMount(){
-//         // console.log('memonté');
-//         this.apiCall('http://localhost:3001/users/api/listUsers',this.UsersInfo)
-//     }
-//     UsersInfo = (data)=>{
-//         console.log(data);
-//         totalUsers.cuantity= data.data.length;
-
-//         this.setState(
-//             {
-//                 users: data.count,
-//             }
-
-//         )
-//     }
-//     componentDidUpdate(){
-//         // console.log('mecambié');
-//         alert('Response from Data Base')
-//     }
-//     render(){
-//         // console.log('esotyrenderizando');
-//         let contenido;
-//         if(this.state.ContentRowMovies2 == ''){
-//             contenido = <p>cargando</p>
-//         }else{
-//             contenido = <p>{this.state.ContentRowMovies2}</p>
-//         }
-//         return(
-//             <div className="row">
-            
-//             {cartProps.map( (user, i) => {
-
-//                 return <SmallCard {...user} key={i}/>
-                
-//             })}
-//         </div>
-
-//         )
-//     }
-// }
 
 export default LastProductInDb;

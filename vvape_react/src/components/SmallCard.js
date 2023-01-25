@@ -1,17 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// let apiCaller(url,handler){
-//     fetch(url)
-//         .then(response => response.json())
-//         .then()
-// }
-
 function SmallCard(props){
 
 
     return(
-        <div className="col-md-4 mb-4">
+        <div className="col-md-4 mb-4 text-center">
             <div className={`card border-left-${props.color} shadow h-100 py-2`}>
                 <div className="card-body">
                     <div className="row no-gutters align-items-center">
