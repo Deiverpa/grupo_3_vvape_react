@@ -58,7 +58,7 @@ class productsInDb extends Component {
         </div>
         
         <div className="card-body">
-          <div className="row d-flex justify-content-center mb-4">
+          <div className="row d-flex justify-content-center mb-4 ">
             <div className="col-lg-6 mb-4">
               <div className="card bg-dark text-white shadow mt-4">
               {this.state.nuevoArray && this.state.nuevoArray.map((item) => (
