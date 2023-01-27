@@ -22,11 +22,11 @@ let categoriesQuantity = {
 
 let cartProps = [TotalProducts, categoriesQuantity];
 
-class ContentRowMovies extends Component {
+class ContentRowProducts extends Component {
     constructor(props){
         super(props);
         this.state = {
-            ContentRowMovies: ''
+            ContentRowProducts: ''
         }
     }
 
@@ -66,10 +66,10 @@ class ContentRowMovies extends Component {
     render(){
         // console.log('esotyrenderizando');
         let contenido;
-        if(this.state.ContentRowMovies == ''){
+        if(this.state.ContentRowProducts == ''){
             contenido = <p>cargando</p>
         }else{
-            contenido = <p>{this.state.ContentRowMovies}</p>
+            contenido = <p>{this.state.ContentRowProducts}</p>
         }
         return(
             <div className="row d-flex justify-content-center">
@@ -86,4 +86,4 @@ class ContentRowMovies extends Component {
 }
 
 
-export default ContentRowMovies;
+export default ContentRowProducts;

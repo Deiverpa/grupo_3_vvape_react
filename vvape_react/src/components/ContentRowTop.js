@@ -1,7 +1,7 @@
 import React from 'react';
 import ContentRowCenter from './ContentRowCenter';
-import ContentRowMovies from './ContentRowMovies';
-import ContentRowMovies2 from './ContentRowMovies2';
+import ContentRowProducts from './ContentRowProducts';
+import ContentRowProducts2 from './ContentRowProducts2';
 import Chart from './Chart';
 
 function ContentRowTop(){
@@ -13,9 +13,9 @@ function ContentRowTop(){
 						<h1 className="h3 mb-0 text-gray-800">VVAPE ADMIN DASHBOARD</h1>
 					</div>
 				
-					{/*<!-- Content Row Movies-->*/}
-					<ContentRowMovies />
-					<ContentRowMovies2 />
+					{/*<!-- Content Row Products-->*/}
+					<ContentRowProducts />
+					<ContentRowProducts2 />
 					<ContentRowCenter />
 					<Chart />
 	

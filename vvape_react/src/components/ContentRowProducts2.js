@@ -20,11 +20,11 @@ let totalUsers = {
 
 let cartProps = [totalUsers];
 
-class ContentRowMovies2 extends Component {
+class ContentRowProducts2 extends Component {
     constructor(props){
         super(props);
         this.state = {
-            ContentRowMovies2: ''
+            ContentRowProducts2: ''
         }
     }
 
@@ -57,10 +57,10 @@ class ContentRowMovies2 extends Component {
     render(){
         // console.log('esotyrenderizando');
         let contenido;
-        if(this.state.ContentRowMovies2 == ''){
+        if(this.state.ContentRowProducts2 == ''){
             contenido = <p>cargando</p>
         }else{
-            contenido = <p>{this.state.ContentRowMovies2}</p>
+            contenido = <p>{this.state.ContentRowProducts2}</p>
         }
         return(
             <div className="row d-flex justify-content-center">
@@ -76,20 +76,6 @@ class ContentRowMovies2 extends Component {
     }
 }
 
-// function ContentRowMovies(){
-    
-//     return (
-    
-//         <div className="row">
-            
-//             {cartProps.map( (movie, i) => {
 
-//                 return <SmallCard {...movie} key={i}/>
-            
-//             })}
 
-//         </div>
-//     )
-// }
-
-export default ContentRowMovies2;
+export default ContentRowProducts2;
