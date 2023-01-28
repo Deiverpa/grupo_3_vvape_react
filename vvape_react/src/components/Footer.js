@@ -13,9 +13,9 @@ function Footer(){
 			}}/>
           <li class="footer">VVAPE - DH</li>
 		  <li></li>
-		  <a target="_blank" href="https://github.com/ebautista07" rel="noopener noreferrer" class="footer">Estefanía GITHUB</a>
+		  <a target="_blank" href="http://localhost:3001/users/api/users" rel="noopener noreferrer" class="footer">USERS API</a>
 		  <li></li>
-		  <a target="_blank" href="https://github.com/Deiverpa" rel="noopener noreferrer" class="footer">Deiver GITHUB</a>
+		  <a target="_blank" href="http://localhost:3001/api/products" rel="noopener noreferrer" class="footer">PRODUCTS API</a>
         </ul>
       </footer>
 
