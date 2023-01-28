@@ -7,7 +7,7 @@ function ChartRow(props){
                 <tr>
                     {Array.isArray(props.Category) &&
                         <td>
-                            <ul>
+                            <ul className='list-unstyled'>
                                 {props.Category.map( (category,i) => 
                                     <li key={`category ${i}`}>{category}</li>
                                 )}
@@ -16,7 +16,7 @@ function ChartRow(props){
                     }
                     {Array.isArray(props.Quantity) &&
                         <td>
-                            <ul>
+                            <ul className='list-unstyled'>
                                 {props.Quantity.map( (quantity,i) => 
                                     <li key={`quantity ${i}`}>{quantity}</li>
                                 )}

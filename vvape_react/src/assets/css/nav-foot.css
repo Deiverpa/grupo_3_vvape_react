@@ -8,6 +8,10 @@ nav .navLink a, a:visited, a:link{
     font-family: 'Nunito';
 }
 
+.footer{
+    font-family: 'Nunito';
+}
+
 /* INICIA FORMS */
 
 form #formA, :visited, :link{

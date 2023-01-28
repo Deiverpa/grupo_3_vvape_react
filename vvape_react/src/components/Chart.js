@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import ChartRow from './ChartRow';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../assets/css/nav-foot.css';
+import '../assets/css/font.css';
 
 let tableRowsData = [
     {
@@ -65,11 +67,11 @@ class Chart extends Component{
                     <table className="table table-bordered" id="dataTable" width="100%" cellSpacing="0">
                         <thead>
                             <tr>
-                                <th>Category</th>
-                                <th>Quantity</th>
+                                <th className='text-center'>CATEGORY</th>
+                                <th className='text-center'>QUANTITY</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody className='text-center '>
                             {
                             tableRowsDataProps.map( ( row , i) => {
                                 return <ChartRow { ...row} key={i}/>

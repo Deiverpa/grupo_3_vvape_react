@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import SmallCard from './SmallCard';
 
+
 /*  Cada set de datos es un objeto literal */
 
 /* <!-- TotalProducts in DB --> */

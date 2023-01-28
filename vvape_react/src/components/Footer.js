@@ -11,11 +11,11 @@ function Footer(){
      		window.location.href = 'https://example.com/1234';
     	    return null;
 			}}/>
-          <li>VVAPE - DH</li>
+          <li class="footer">VVAPE - DH</li>
 		  <li></li>
-		  <a target="_blank" href="https://github.com/ebautista07" rel="noopener noreferrer">Estefanía GITHUB</a>
+		  <a target="_blank" href="https://github.com/ebautista07" rel="noopener noreferrer" class="footer">Estefanía GITHUB</a>
 		  <li></li>
-		  <a target="_blank" href="https://github.com/Deiverpa" rel="noopener noreferrer">Deiver GITHUB</a>
+		  <a target="_blank" href="https://github.com/Deiverpa" rel="noopener noreferrer" class="footer">Deiver GITHUB</a>
         </ul>
       </footer>
 

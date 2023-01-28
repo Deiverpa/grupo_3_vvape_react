@@ -52,17 +52,17 @@ class ProductsInDb extends Component {
     <div className="col-lg-6 mb-4">
       <div className="card shadow mb-4">
         <div className="card-header py-3">
-          <h5 className="m-0 font-weight-bold text-gray-800">
-            Products in Data Base
+          <h5 className="m-0 font-weight-bold text-gray-800 ">
+            PRODUCTS IN DATA BASE
           </h5>
         </div>
         
         <div className="card-body">
           <div className="row d-flex justify-content-center mb-4 ">
             <div className="col-lg-6 mb-4">
-              <div className="card bg-dark text-white shadow mt-4">
+              <div className="bg-white text-dark ">
               {this.state.nuevoArray && this.state.nuevoArray.map((item) => (
-              <div className="card-body d-flex justify-content-center" key={item}>{item}</div>
+              <div className="card-body d-flex justify-content-center" key={item}>🔥 {item} 🔥</div>
               ))}
               </div>
             </div>
